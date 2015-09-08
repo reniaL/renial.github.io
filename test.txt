@@ -1,0 +1,5 @@
+ERROR:  Could not find a valid gem 'jekyll' (>= 0), here is why:
+          Unable to download data from https://rubygems.org/ - Errno::ECONNABORTED: An established connection was aborted by the software in your host machine. - SSL_connect (https://rubygems.org/latest_specs.4.8.gz)
+
+
+  Liquid Exception: No such file or directory - python E:/app/Ruby/lib/ruby/gems/2.0.0/gems/pygments.rb-0.6.3/lib/pygments/mentos.py in _posts/2015-09-03-welcome-to-jekyll.markdown

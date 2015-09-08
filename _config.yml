@@ -1,0 +1,12 @@
+# Site settings
+title: 无忧岛
+email: reniallainer@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Neverland by reniaL
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://renial.github.io" # the base hostname & protocol for your site
+twitter_username: reniaL
+github_username:  reniaL
+
+# Build settings
+markdown: kramdown
