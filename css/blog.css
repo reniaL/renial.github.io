@@ -3,7 +3,7 @@
  */
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Microsoft YaHei", Georgia, "Times New Roman", Times, serif;
   color: #555;
 }
 
@@ -14,7 +14,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #333;
 }
@@ -26,7 +26,7 @@ h6, .h6 {
 
 @media (min-width: 1200px) {
   .container {
-    width: 970px;
+    width: 1070px;
   }
 }
 
@@ -46,6 +46,7 @@ h6, .h6 {
   position: relative;
   display: inline-block;
   padding: 10px;
+  font-size: 16px;
   font-weight: 500;
   color: #cdddeb;
 }
@@ -142,7 +143,7 @@ h6, .h6 {
 }
 .blog-post-title {
   margin-bottom: 5px;
-  font-size: 40px;
+  font-size: 32px;
 }
 .blog-post-meta {
   margin-bottom: 20px;
