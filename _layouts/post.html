@@ -1,21 +1,40 @@
----
-layout: default
----
-<div class="post">
+<!DOCTYPE html>
+<html>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="blog-post-meta">{{ page.date | date: "%Y-%m-%d" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+  {% include head.html %}
 
-  <article class="post-content">
-    {{ content }}
-  </article>
-  <hr>
-    <p>
-        {% for c in page.categories %}
-            <code>{{ c }}</code>
-        {% endfor %}
-    </p>
+  <body>
 
-</div>
+    {% include header.html %}
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+            <div class="post">
+            
+              <header class="post-header">
+                <h1 class="post-title">{{ page.title }}</h1>
+                <p class="blog-post-meta">{{ page.date | date: "%Y-%m-%d" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+              </header>
+            
+              <article class="post-content">
+                {{ content }}
+              </article>
+              <hr>
+                <p>
+                    {% for c in page.categories %}
+                        <code>{{ c }}</code>
+                    {% endfor %}
+                </p>
+            
+            </div>
+        </div><!-- /.blog-main -->
+        {% include sidebar.html %}
+      </div>
+    </div><!-- /.container -->
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

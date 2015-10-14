@@ -150,6 +150,10 @@ h6, .h6 {
   color: #999;
 }
 
+.post-header {
+    margin-top: 40px;
+}
+
 
 /*
  * Footer
