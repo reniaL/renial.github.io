@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "不走寻常路——读松本清张《大手笔》"
-date:   2014-11-15
 categories: life
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "无忧岛历代记"
-date:   2015-10-12 20:15
 categories: life
 ---
 
