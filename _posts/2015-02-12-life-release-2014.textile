@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Life Release 2014"
-categories: life
+tags: life life-release
 ---
 
 

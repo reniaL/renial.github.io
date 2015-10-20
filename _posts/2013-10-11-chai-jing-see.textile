@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "柴静《看见》"
-categories: book
+tags: book
 ---
 
 这是近几年对我帮助最大的一本书（好吧这两年我读的书总共也就那么几本），让我学到了很多东西。

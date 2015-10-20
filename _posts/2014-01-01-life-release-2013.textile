@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Life Release 2013"
-categories: life
+tags: [life, life-release]
 ---
 
 p{color:#9BBB59; font-size: 1.2em;}. 生活

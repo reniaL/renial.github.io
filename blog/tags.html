@@ -1,0 +1,25 @@
+---
+layout: post
+---
+
+<div id="life">
+    <h2>日子</h2>
+    <p>
+        <ul>
+            {% for p in site.tags.life %}
+                <li>{{ p.date | date: "%Y-%m-%d" }} <a href="{{ p.url }}">{{ p.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </p>
+</div>
+
+<div id="book">
+    <h2>书话</h2>
+    <p>
+        <ul>
+            {% for p in site.tags.book %}
+                <li>{{ p.date | date: "%Y-%m-%d" }} <a href="{{ p.url }}">{{ p.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </p>
+</div>

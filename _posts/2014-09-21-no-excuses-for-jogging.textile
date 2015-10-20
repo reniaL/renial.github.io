@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "无需理由"
-categories: life
+tags: [life, jogging]
 ---
 
 如果你准备开始跑步，第一个问题很可能是，什么时间跑？上网一搜，会有这样的说法：
