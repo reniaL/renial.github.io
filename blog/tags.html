@@ -23,3 +23,14 @@ layout: default
         </ul>
     </p>
 </div>
+
+<div id="music">
+    <h2>乐事</h2>
+    <p>
+        <ul>
+            {% for p in site.tags.music %}
+                <li>{{ p.date | date: "%Y-%m-%d" }} <a href="{{ p.url }}">{{ p.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </p>
+</div>

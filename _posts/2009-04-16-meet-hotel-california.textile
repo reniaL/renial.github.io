@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "预见加州旅馆"
+title:  "遇见加州旅馆"
 tags: [music]
 ---
 
