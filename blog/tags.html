@@ -34,3 +34,14 @@ layout: default
         </ul>
     </p>
 </div>
+
+<div id="play">
+    <h2>乱弹</h2>
+    <p>
+        <ul>
+            {% for p in site.tags.play %}
+                <li>{{ p.date | date: "%Y-%m-%d" }} <a href="{{ p.url }}">{{ p.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </p>
+</div>
