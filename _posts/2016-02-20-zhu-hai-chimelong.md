@@ -11,4 +11,4 @@ tags: life
 
 新年计划中提到的，带雯雯去多一些地方看一看，说的很对。
 
-!{display: block;margin-left: auto;margin-right: auto;}/images/blog/chimelong.jpg!
+![](/images/blog/chimelong.jpg)
