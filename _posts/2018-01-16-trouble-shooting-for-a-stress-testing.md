@@ -82,6 +82,6 @@ https://medium.com/@odedia/production-considerations-for-spring-session-redis-in
 
 ## 真·答案
 
-几个排查的人都没辙了，大家都靠自己的直觉在继续排查和尝试。我总觉得，真想应该藏在某个并不复杂的角落里。而且我对之前“两台压力机分别压两个Tomcat”的结果耿耿于怀，于是用一些关键字在 Google：apache benchmark, throughput, network... 然后，偶然翻到这篇 [StackOverflow](https://stackoverflow.com/questions/596590/how-can-i-get-the-current-network-interface-throughput-statistics-on-linux-unix) ，里面说到一个工具 iftop。于是在一台 Tomcat 上装了，运行，测试，一看，我靠，带宽直逼 1G ！赶紧拉运维同学过来看，一番讨论，终于找到罪魁祸首：带宽跑满了，之前我们看监控上的带宽数据，因为算法问题被平均了，所以一直没发现。。。
+几个排查的人都没辙了，大家都靠自己的直觉在继续排查和尝试。我总觉得，真相应该藏在某个并不复杂的角落里。而且我对之前“两台压力机分别压两个Tomcat”的结果耿耿于怀，于是用一些关键字在 Google：apache benchmark, throughput, network... 然后，偶然翻到这篇 [StackOverflow](https://stackoverflow.com/questions/596590/how-can-i-get-the-current-network-interface-throughput-statistics-on-linux-unix) ，里面说到一个工具 iftop。于是在一台 Tomcat 上装了，运行，测试，一看，我靠，带宽直逼 1G ！赶紧拉运维同学过来看，一番讨论，终于找到罪魁祸首：带宽跑满了，之前我们看监控上的带宽数据，因为算法问题被平均了，所以一直没发现。。。
 
 像很多故事一样，最终发现的问题原因，其实很简单，真的很简单。但是却折腾了我们几天时间，很久没有像这样为一个技术问题折腾好几天了。不过，我觉得这几天时间也并没有浪费，这个排查的过程，学到了很多新东西，例如 Spring Session 的一些问题，例如 Redis 的一些配置和用法，例如各种工具 (jstack, ab, wrk, iftop)，等等。
