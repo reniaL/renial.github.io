@@ -17,6 +17,7 @@ tags: [book]
 
 这样一次审视让我看清了一些东西，但无法脱离的依旧是城市生活。最多有时会向往一下远方，寄托一些梦想。
 
+<!--more-->
 
 <span style="color:#428BCA; font-size: 1.4em;">救赎与不安</span>
 

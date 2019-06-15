@@ -16,6 +16,8 @@ tags: [code]
 
 机器表现：Nginx 和 Tomcat 机器的 CPU 负载不高，30%左右。Redis 机器负载较低。从监控上看带宽也没到瓶颈。
 
+<!--more-->
+
 ## 2、发现 Spring Session 的问题
 
 一开始，怀疑是 Spring Session 和单节点 Redis 的问题，尝试将单节点 Redis 改为集群。

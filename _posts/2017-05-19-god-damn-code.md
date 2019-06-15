@@ -14,6 +14,8 @@ tags: [code]
 PostMethod getMethod = new PostMethod(url);
 ```
 
+<!--more-->
+
 **我真的只是一个工具类**
 
 ```java
