@@ -20,6 +20,8 @@ tags: [book]
 
 会继续找布洛克来读，传说中的马修·斯卡德，貌似很有趣啊。
 
+![small-town](/images/blog/2019-06-14-small-town.jpg)
+
 <!--more-->
 
 ## 书摘
