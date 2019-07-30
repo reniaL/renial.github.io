@@ -23,7 +23,7 @@ public void test() {
 
 但是（没错转折来了），已经2019年了，Mockito 依然不支持 mock 静态方法、构造方法等。你可以说，这是设计理念，Mockito 首页上一直写着一句话 **"Don’t mock everything"** ，认为说应该做好功能代码的设计，尽量避免静态方法等，尽量使你的代码易于测试。这个理念，在理论上没问题，但这么多年的开发经验告诉我，理想归理想，实际上要你去维护的遗留代码总是一箩筐一箩筐的，避无可避。
 
-## Static methods, to mock or not to mock, that is a question
+## Static methods, to mock or not to mock, that is the question
 
 单元测试中是否要 mock 静态方法，一直争论不休，网上有 [一个](https://stackoverflow.com/questions/4482315/why-doesnt-mockito-mock-static-methods) [一个](https://testing.googleblog.com/2008/12/static-methods-are-death-to-testability.html) [又一个](https://github.com/mockito/mockito/issues/1013) 的讨论，各种意见都有。
 
@@ -37,7 +37,7 @@ Mockito、EasyMock 等工具不支持 mock 静态方法，原理上是因为它�
 
 ## 另辟蹊径的 JMockit
 
-和其他大多数使用 cglib 实现的单元测试工具不同，[JMockit](https://jmockit.github.io) 使用 JDK6 的 java.lang.instrument 包和 ASM，动态地在运行时修改字节码，从而实现 **"Mock Anything"** 。什么静态方法、构造函数，随时随地想 mock 就 mock。一个 JMockit ，解决了 Mockito + PowerMock 两个工具都解决不了的问题，那为啥不用 JMockit 呢？JMockit 为啥流行不起来呢？
+和其他大多数使用 cglib 实现的单元测试工具不同，[JMockit](https://jmockit.github.io) 使用 JDK6 的 java.lang.instrument 包和 [ASM](https://asm.ow2.io/)，动态地在运行时修改字节码，从而实现 **"Mock Anything"** 。什么静态方法、构造函数，随时随地想 mock 就 mock。一个 JMockit ，解决了 Mockito + PowerMock 两个工具都解决不了的问题，那为啥不用 JMockit 呢？JMockit 为啥流行不起来呢？
 
 ```java
 public class UserServiceTest {
