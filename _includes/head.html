@@ -41,6 +41,6 @@
 {%- include snippets/prepend-baseurl.html path='/assets/css/main.css' -%}
 <link rel="stylesheet" href="{{ __return }}">
 
-{%- include snippets/get-sources.html -%}
-{%- assign _sources = __return -%}
-<link rel="stylesheet" href="{{ _sources.font_awesome }}" >
+{%- include snippets/prepend-baseurl.html path='/assets/css/fontawesome-v5.0.13-all.css' -%}
+<link rel="stylesheet" href="{{ __return }}">
+
