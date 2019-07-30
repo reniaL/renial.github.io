@@ -33,6 +33,8 @@ public void test() {
 
 Mockito、EasyMock 等工具不支持 mock 静态方法，原理上是因为它们都是基于 cglib 的，只能通过创建子类或实现接口的方式去 mock。那除了 cglib ，就没有其他的 mock 实现方法了吗？当然有，修改字节码呀！
 
+<!--more-->
+
 ## 另辟蹊径的 JMockit
 
 和其他大多数使用 cglib 实现的单元测试工具不同，[JMockit](https://jmockit.github.io) 使用 JDK6 的 java.lang.instrument 包和 ASM，动态地在运行时修改字节码，从而实现 **"Mock Anything"** 。什么静态方法、构造函数，随时随地想 mock 就 mock。一个 JMockit ，解决了 Mockito + PowerMock 两个工具都解决不了的问题，那为啥不用 JMockit 呢？JMockit 为啥流行不起来呢？
