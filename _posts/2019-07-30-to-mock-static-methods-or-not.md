@@ -6,7 +6,7 @@ tags: [code]
 
 ## 王者 Mockito
 
-不知从何时开始，Mockito 成了 Java 的单元测试框架王者，目前（2019年7月）Github 上 star 数直逼 10K。看看其他的单元测试工具：PowerMock 2K（无疑是沾了 Mockito 的光），easymock 600，JMockit 300。跟 Mockito 一比，好可怜啊，一个能打的都没有。
+不知从何时开始，[Mockito](https://site.mockito.org/) 成了 Java 的单元测试框架王者，目前（2019年7月）Github 上 star 数直逼 10K。看看其他的单元测试工具：PowerMock 2K（无疑是沾了 Mockito 的光），easymock 600，JMockit 300。跟 Mockito 一比，好可怜啊，一个能打的都没有。
 
 Mockito 当然很好。我从2012年还是2013年开始用 Mockito，看着它从 1.0x 版本一路走来，今年晚些时候估计会正式发布 3.0 版本。应该有不少人都跟我有类似的体验，从 Mockito 开始接触 mock / stub，一边赞叹 Mockito 语法的简练，一边享受着 mock 带来的单元测试的便利性。总说单元测试应该要隔离外部依赖和实现，很难想象，如果没有 mock，怎么写单元测试呢？
 
@@ -35,7 +35,7 @@ Mockito、EasyMock 等工具不支持 mock 静态方法，原理上是因为它�
 
 ## 另辟蹊径的 JMockit
 
-和其他大多数使用 cglib 实现的单元测试工具不同，JMockit 使用 JDK6 的 java.lang.instrument 包和 ASM，动态地在运行时修改字节码，从而实现 **"Mock Anything"** 。什么静态方法、构造函数，随时随地想 mock 就 mock。一个 JMockit ，解决了 Mockito + PowerMock 两个工具都解决不了的问题，那为啥不用 JMockit 呢？JMockit 为啥流行不起来呢？
+和其他大多数使用 cglib 实现的单元测试工具不同，[JMockit](https://jmockit.github.io) 使用 JDK6 的 java.lang.instrument 包和 ASM，动态地在运行时修改字节码，从而实现 **"Mock Anything"** 。什么静态方法、构造函数，随时随地想 mock 就 mock。一个 JMockit ，解决了 Mockito + PowerMock 两个工具都解决不了的问题，那为啥不用 JMockit 呢？JMockit 为啥流行不起来呢？
 
 ```java
 public class UserServiceTest {
