@@ -1,5 +1,11 @@
 header:
   - titles:
+      en:       Laura
+      zh:       小蚊蚊
+      zh-Hans:  小蚊蚊
+      zh-Hant:  小蚊蚊
+    url:        /laura.html
+  - titles:
       en:       Archive
       zh:       归档
       zh-Hans:  归档
