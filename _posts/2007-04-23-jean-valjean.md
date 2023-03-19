@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "冉阿让"
-tags: [play]
+tags: [book]
 ---
 
 我真的不想这样  
